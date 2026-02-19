@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>Resume</title>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<link rel="stylesheet" href="stylesheet_main.css"/>
+</head>
+<body>
+<header class="top">
+<h2><a href="index.html">Mohit editor</a></h2>
+<div>
+<p onclick="mytoggle()">&#9776;</p>
+<div id="togmenu" class="touchnav">
+<nav class="navtop">
+<ul>
+     <li><a href="resume.html">Resume</a></li>
+     <li><a href="project.html">Project</a></li>
+     <li><a href="contact.html">Contact</a></li>
+</ul>
+</nav>
+</div>
+</div>
+</header>
+<hr/>
+<main class="project">
+
+<h1>Projects</h1>
+
+<div class="project_one">
+<div class="project_content01">
+<h2>Project Name 01</h2>
+<p>I'm a paragraph. Click here to add your own text and edit me. It’s easy. Just click “Edit Text” or double click me to add your own content and make changes to the font. I’m a great place for you to tell a story and let your users know a little more about you.</p>
+</div>
+<div class="project_img01">
+<img src="project01.jpeg">
+</div>
+</div>
+
+<div class="project_two">
+<div class="project_content02">
+<h2>Project Name 02</h2>
+<p>I'm a paragraph. Click here to add your own text and edit me. It’s easy. Just click “Edit Text” or double click me to add your own content and make changes to the font. I’m a great place for you to tell a story and let your users know a little more about you.</p>
+</div>
+<div class="project_img02">
+<img src="project02.jpeg">
+</div>
+</div>
+
+<div class="project_three">
+<div class="project_content03">
+<h2>Project Name 03</h2>
+<p>I'm a paragraph. Click here to add your own text and edit me. It’s easy. Just click “Edit Text” or double click me to add your own content and make changes to the font. I’m a great place for you to tell a story and let your users know a little more about you.</p>
+</div>
+<div class="project_img03">
+<img src="project03.jpeg">
+</div>
+</div>
+
+</main>
+<hr/>
+<footer class="footerdown">
+<div class="fdetail1">
+<h3>Phone</h3>
+<p>999 222 333</p>
+</div>
+
+<div class="fdetail2">
+<h3>Email</h3>
+<a href="mailto:xyz@gmail.com">xyz@gmail.com</a>
+</div>
+
+<div class="fdetail3">
+<h3>Follow Me</h3>
+<a class="iconf" href="#"></a>
+<a class="iconi" href="#"></a>
+</div>
+
+<div class="fdetail4">
+<p>@ Edited By Mohit</p>
+</div>
+
+</footer>
+
+<script>
+const menu = document.getElementById('togmenu');
+function mytoggle() {
+        if(menu.style.display==="block"){
+        menu.style.display = "none";
+}else {menu.style.display = "block";}
+}
+</script>
+</body>
+</html>

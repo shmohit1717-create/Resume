@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>Resume</title>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<link rel="stylesheet" href="stylesheet_main.css"/>
+</head>
+<body>
+<header class="top">
+<h2><a href="index.html">Mohit editor</a></h2>
+<div>
+<p onclick="mytoggle()">&#9776;</p>
+<div id="togmenu" class="touchnav">
+<nav class="navtop">
+<ul>
+     <li><a href="resume.html">Resume</a></li>
+     <li><a href="project.html">Project</a></li>
+     <li><a href="contact.html">Contact</a></li>
+</ul>
+</nav>
+</div>
+</div>
+</header>
+<hr/>
+<main class="contact">
+<div class="contact_my">
+<h1>Contact</h1>
+<p>Looking forward to hearing from you</p>
+
+<h3>Phone</h3>
+<p>999 222 333</p>
+
+<h3>Email</h3>
+<p>xyz@gmail.com</p>
+</div>
+
+<form method="post">
+     <div class="wrapper">
+      <div class="detail"> 
+     <label for="firstname" >First Name*</label>
+     <input type="text" id="firstname" name="firstname" required>
+      </div>
+     <div class="detail">
+    <label for="lastname">Last Name*</label>
+    <input type="text" id="lastname" name="lastname" required>
+    </div>
+     </div>
+    <div class="wrapper">
+    <div class="detail">
+    <label for="email">Email</label>
+    <input type="email" id="email" name="email" required> 
+     </div>
+     <div class="detail">
+    <label for="subject">Subject</label>
+    <input type="text" id="subject" name="subject">
+     </div>
+     </div>
+    <div class="detail">
+     <label for="message">Message</label>
+     <textarea id="message" name="message" row="5"></textarea>
+     </div>
+      
+     <button type="submit">Submit</button>
+  
+</form>
+</main>
+<hr/>
+<footer class="footerdown">
+<div class="fdetail1">
+<h3>Phone</h3>
+<p>999 222 333</p>
+</div>
+
+<div class="fdetail2">
+<h3>Email</h3>
+<a href="mailto:xyz@gmail.com">xyz@gmail.com</a>
+</div>
+
+<div class="fdetail3">
+<h3>Follow Me</h3>
+<a class="iconf" href="#"></a>
+<a class="iconi" href="#"></a>
+</div>
+
+<div class="fdetail4">
+<p>@ Edited By Mohit</p>
+</div>
+
+</footer>
+<script>
+const menu = document.getElementById('togmenu');
+function mytoggle() {
+        if(menu.style.display==="block"){
+        menu.style.display = "none";
+}else {menu.style.display = "block";}
+}
+</script>
+
+</body>
+</html>
