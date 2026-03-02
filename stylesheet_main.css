@@ -108,7 +108,7 @@ main.front {flex:1;
 .side1 img {border-radius:250px;
                     width:450px;
                     height:450px;}
-.animation_up {animation: slideup 1s ease-out;}
+.animation_up {animation: slideup 1s ease-out 0.5s forwards;opacity:0;}
 
 @keyframes slideup {
 0% {transform:translateY(100px);opacity:0;}
@@ -282,6 +282,7 @@ button:hover {background-color:rgb(238,238,238);
                padding:50px 10px;}
 .wrapper {flex-direction:column;}
 }
+
 
 
 
