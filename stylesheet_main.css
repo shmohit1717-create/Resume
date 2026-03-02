@@ -108,6 +108,13 @@ main.front {flex:1;
 .side1 img {border-radius:250px;
                     width:450px;
                     height:450px;}
+.animation_up {animation: slideup 1s ease-out;}
+
+@keyframes slideup {
+0% {transform:translateY(100px);opacity:0;}
+100%{opacity:1;}
+}
+
 hr {margin:0 30px;
       box-shadow:0 3px 5px rgb(0,0,0,0.3);}
 @media screen and (max-width:600px){
@@ -275,6 +282,7 @@ button:hover {background-color:rgb(238,238,238);
                padding:50px 10px;}
 .wrapper {flex-direction:column;}
 }
+
 
 
 
