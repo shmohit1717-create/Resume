@@ -34,7 +34,8 @@ body {font-family:Bahnschrift;
 .top p {display:none;
            font-size:40px;
            }
-. touchnav {display:block;}
+.touchnav {display:block;
+          z-index:999;}
 
 @media screen and (max-width:600px){
 .top p {display:block;
@@ -282,6 +283,7 @@ button:hover {background-color:rgb(238,238,238);
                padding:50px 10px;}
 .wrapper {flex-direction:column;}
 }
+
 
 
 
