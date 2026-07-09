@@ -96,19 +96,14 @@ function mytoggle() {
         menu.style.display = "none";
 }else {menu.style.display = "block";}
 }
-     const form = document.querySelector("form");
+const form = document.querySelector("form");
 
 form.addEventListener("submit", function(e){
  e.preventDefault();
 
- const obj = {firstname:document.getElementById("firstname").value,
-          lastname:document.getElementById("lastname").value,
-          email:document.getElementById("email").value,
-          subject:document.getElementById("subject").value,
-          message:document.getElementById("message").value
-  };
+ const obj = new FormData(form);
 
-  fetch("https://script.google.com/macros/s/AKfycbzu2hM1MXa3HdiX_d5Ci9FgOpM2hpcXFl83MtniXI0KMJvVXioRvuOWOINT0NyPdnz6/exec",{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify(obj)})
+  fetch("https://script.google.com/macros/s/AKfycbzu2hM1MXa3HdiX_d5Ci9FgOpM2hpcXFl83MtniXI0KMJvVXioRvuOWOINT0NyPdnz6/exec",{method:"POST",body:obj})
   
   .then(response => response.text())
 
