@@ -36,7 +36,7 @@
 <p>xyz@gmail.com</p>
 </div>
 
-<form method="post">
+<form action="https://script.google.com/macros/s/AKfycbw4pHU4-pUqJwbxOMQCDcCLBiUqSryjhVp-lmFeOSzSxs3tMgp56QutnjrLyptL6MyDBQ/exec" method="post">
      <div class="wrapper">
       <div class="detail"> 
      <label for="firstname" >First Name*</label>
@@ -96,27 +96,7 @@ function mytoggle() {
         menu.style.display = "none";
 }else {menu.style.display = "block";}
 }
-const form = document.querySelector("form");
 
-form.addEventListener("submit", function(e){
- e.preventDefault();
-
- const obj = new FormData(form);
-
-  fetch("https://script.google.com/macros/s/AKfycbzu2hM1MXa3HdiX_d5Ci9FgOpM2hpcXFl83MtniXI0KMJvVXioRvuOWOINT0NyPdnz6/exec",{method:"POST",body:obj})
-  
-  .then(response => response.text())
-
-  .then(data => {
-  console.log(data);
-})
-
-  .catch(error => {
-   console.log(error);
-})
-
-  form.reset();
-})
 </script>
 
 </body>
